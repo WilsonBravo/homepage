@@ -56,6 +56,17 @@
   }
   
   @media screen and (max-width: 576px) {
+    .resume {
+        padding: 30px 0;
+    }
+    .resume__block--container{
+        flex-wrap: wrap;
+    }
+    .skills__list--item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
     .main-info,
     .contact_info_container {
       flex-direction: column;
@@ -228,6 +239,11 @@
   }
   
   .experiences__company-project-responsibilities {
+    color: var(--secondary-text-color);
+    padding-left: 20px;
+  }
+
+  .skills__list--item {
     color: var(--secondary-text-color);
     padding-left: 20px;
   }
